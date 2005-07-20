@@ -21,8 +21,8 @@
 
 bin_PROGRAMS = xf86dga
 
-xf86dga_CFLAGS = $(DEP_CFLAGS)
-xf86dga_LDADD = $(DEP_LIBS)
+xf86dga_CFLAGS = $(XF86DGA_CFLAGS)
+xf86dga_LDADD = $(XF86DGA_LIBS)
 
 xf86dga_SOURCES =	\
         dga.c
