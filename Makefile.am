@@ -27,6 +27,6 @@ xf86dga_LDADD = $(XF86DGA_LIBS)
 xf86dga_SOURCES =	\
         dga.c
 
-dist_man_MANS = \
+dist_man1_MANS = \
         dga.man
 
