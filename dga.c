@@ -22,7 +22,7 @@ GetTimeInMillis(void)
 {
     struct timeval  tp;
 
-    gettimeofday(&tp, 0);
+    gettimeofday(&tp, NULL);
     return(tp.tv_sec * 1000) + (tp.tv_usec / 1000);
 }
 
