@@ -21,7 +21,7 @@
 
 bin_PROGRAMS = dga
 
-dga_CFLAGS = $(XF86DGA_CFLAGS)
+AM_CFLAGS = $(CWARNFLAGS) $(XF86DGA_CFLAGS)
 dga_LDADD = $(XF86DGA_LIBS)
 
 dga_SOURCES =	\
@@ -60,7 +60,7 @@ MAN_SUBSTS = \
 SUFFIXES = .$(APP_MAN_SUFFIX) .man
 
 .man.$(APP_MAN_SUFFIX):
-	sed $(MAN_SUBSTS) < $< > $@
+	$(AM_V_GEN)$(SED) $(MAN_SUBSTS) < $< > $@
 
 EXTRA_DIST += ChangeLog
 MAINTAINERCLEANFILES = ChangeLog
