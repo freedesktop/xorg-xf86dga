@@ -41,4 +41,7 @@ XORG_DEFAULT_OPTIONS
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(XF86DGA, [x11 xxf86dga >= 1.1])
 
-AC_OUTPUT([Makefile])
+AC_CONFIG_FILES([
+	Makefile
+	man/Makefile])
+AC_OUTPUT
